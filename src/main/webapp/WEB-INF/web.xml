@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+
+	<!-- Passenger Servlet Mapping -->
+	<servlet>
+		<servlet-name>RetrievePassengerDetailsServlet</servlet-name>
+		<servlet-class>com.passenger.RetrievePassengerDetailsServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RetrievePassengerDetailsServlet</servlet-name>
+		<url-pattern>/retrievePassenger</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginPassengerServlet</servlet-name>
+		<servlet-class>com.passenger.LoginPassengerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginPassengerServlet</servlet-name>
+		<url-pattern>/loginPassenger</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>InsertPassengerServlet</servlet-name>
+		<servlet-class>com.passenger.InsertPassengerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>InsertPassengerServlet</servlet-name>
+		<url-pattern>/insertPassenger</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdatePassengerServlet</servlet-name>
+		<servlet-class>com.passenger.UpdatePassengerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdatePassengerServlet</servlet-name>
+		<url-pattern>/updatePassenger</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeletePassengerServlet</servlet-name>
+		<servlet-class>com.passenger.DeletePassengerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeletePassengerServlet</servlet-name>
+		<url-pattern>/deletePassenger</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Reservation Servlet Mapping -->
+	<servlet>
+		<servlet-name>InsertReservationServlet</servlet-name>
+		<servlet-class>com.reservation.InsertReservationServlet</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>InsertReservationServlet</servlet-name>
+		<url-pattern>/insertReservation</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>UpdateReservationServlet</servlet-name>
+		<servlet-class>com.reservation.UpdateReservationServlet</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>UpdateReservationServlet</servlet-name>
+		<url-pattern>/updateReservation</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeleteReservationServlet</servlet-name>
+		<servlet-class>com.reservation.DeleteReservationServlet</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>DeleteReservationServlet</servlet-name>
+		<url-pattern>/deleteReservation</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ViewReservationServlet</servlet-name>
+		<servlet-class>com.reservation.ViewReservationServlet</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>ViewReservationServlet</servlet-name>
+		<url-pattern>/viewReservation</url-pattern>
+	</servlet-mapping>
+
+	<!-- Payment Servlet Mapping -->
+	<servlet>
+		<servlet-name>InsertPaymentServlet</servlet-name>
+		<servlet-class>com.payment.PaymentInsertServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>InsertPaymentServlet</servlet-name>
+		<url-pattern>/insertPayment</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CheckPaymentServlet</servlet-name>
+		<servlet-class>com.payment.CheckPaymentServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CheckPaymentServlet</servlet-name>
+		<url-pattern>/checkPayment</url-pattern>
+	</servlet-mapping>
+
+	
+	<servlet>
+		<servlet-name>PaymentUpdateServlet</servlet-name>
+		<servlet-class>com.payment.PaymentUpdateServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PaymentUpdateServlet</servlet-name>
+		<url-pattern>/updatePayment</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PaymentDeleteServlet</servlet-name>
+		<servlet-class>com.payment.PaymentDeleteServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PaymentDeleteServlet</servlet-name>
+		<url-pattern>/deletePayment</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Bus Servlet Mapping -->
+	
+	 <servlet>
+		 	<servlet-name>BusInsertservlet</servlet-name>
+		 	<servlet-class>com.bus.BusInsertservlet</servlet-class>
+		 </servlet>
+		 
+		 <servlet-mapping>
+		 	<servlet-name>BusInsertservlet</servlet-name>
+		 	<url-pattern>/businsert</url-pattern>
+		 </servlet-mapping>
+		 
+		  <servlet>
+		 	<servlet-name>BusLoginservlet</servlet-name>
+		 	<servlet-class>com.bus.BusLoginServlet</servlet-class>
+		 </servlet>
+		 
+		 <servlet-mapping>
+		 	<servlet-name>BusLoginservlet</servlet-name>
+		 	<url-pattern>/buslogin</url-pattern>
+		 </servlet-mapping>
+		 
+		   <servlet>
+		 	<servlet-name>UpdateBusServlet</servlet-name>
+		 	<servlet-class>com.bus.UpdateBusServlet</servlet-class>
+		 </servlet>
+		 
+		 <servlet-mapping>
+		 	<servlet-name>UpdateBusServlet</servlet-name>
+		 	<url-pattern>/busupdate</url-pattern>
+		 </servlet-mapping>
+		 
+		  <servlet>
+		 	<servlet-name>DeleteBusServlet</servlet-name>
+		 	<servlet-class>com.bus.DeleteBusServlet</servlet-class>
+		 </servlet>
+		 
+		 <servlet-mapping>
+		 	<servlet-name>DeleteBusServlet</servlet-name>
+		 	<url-pattern>/busdelete</url-pattern>
+		 </servlet-mapping>
+
+</web-app>
